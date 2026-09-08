@@ -6,8 +6,8 @@
     <title>Document</title>
     <style>
         .container {
-            height: 670px;
-            background-color: rgb(235, 245, 247);
+            height: 710px;
+            background-color: rgb(223, 240, 245);
             margin: 0px;
             border-radius: 0px 0px 50px 50px; 
             margin: 0;
@@ -23,8 +23,8 @@
             padding-top: 15px;
 
         }
-        .head{background-color: rgb(235, 245, 247);
-            height: 50px; 
+        .head{background-color: rgb(252, 255, 255);
+            height: 75px; 
             display: flex;
             text-align: center;
         }
@@ -32,9 +32,9 @@
         display: flex;
         gap: 40px;
         font-weight: bold ;
-        color: rgb(155, 155, 155);
         font-size: 20px;
         text-align: center;
+        background-color: rgb(252, 255, 255);
         align-items: center;
         margin-top: 10px;
         margin-left: 380px;
@@ -42,22 +42,23 @@
         }
     nav a{
        text-decoration: none;
+       background-color: rgb(252, 255, 255);
        color: rgb(88, 87, 87);
        font-size: 20px;
     }
-    p:hover{
-        background-color: rgb(245, 239, 239);
-    }
-    p{  display: inline-flex;
+    .review-text{  display: inline-flex;
     align-items: center;
-    gap: 6px;
-    padding: 8px 18px;
-    background-color: #ffffff;
-    border: 1px solid #cbd5e1;
-    border-radius: 9999px;    
+    padding: 8px;
+    background-color: rgb(235);
+    border: 1px solid rgb(204, 202, 202);
+    border-radius: 8px;    
+    font-weight: bold;
     color: #1e293b;           
-    font-size: 14px;
+    font-size: 16px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+    }
+    .review-text:hover {
+        background-color: rgb(233, 231, 231);
     }
     .main-container {
     display: flex;
@@ -67,8 +68,86 @@
     gap: 15px; 
     min-height: 200px;
     font-family: sans-serif;
-}
+    }
+    .login {
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        margin-left: 20px;
+        margin-top: 25px;
+        backgrund-color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
 
+    }
+    .login a {
+        color: black;
+        text-decoration: none;
+
+    }
+    .languages{
+        display: flex;
+        text-align: center;
+        align-items: right;
+        margin-right: 15px;
+        padding: 12px;
+        border: 1px rgb(136, 134, 134);
+    }
+    .review-text2{  display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 240px;
+    margin-bottom: 0px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(235);
+    border: 1px solid rgb(204, 202, 202);
+    border-radius: 30px;    
+    font-weight: 300;
+    color: #1e293b;  
+    background-color: white;         
+    font-size: 16px;
+    padding-left: 25px ;
+    padding-right: 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+    }
+    form{
+        padding: 30px;
+    }
+    input{
+        padding: 25px;
+        border-radius: 17px;
+        border: 1px solid rgb(170, 168, 168);
+        width: 870px;
+        font-size: 32px;
+    }
+    input::placeholder{
+        text-align: left;
+        font-size: 28px;
+        padding-left: 2px;
+        color: rgb(190, 188, 188);
+    }
+    input:hover{
+        border: 1px solid rgb(214, 213, 213);
+    }
+    button{
+        background-color: rgb(5, 91, 252); 
+        color:white; 
+        border-radius: 5px; 
+        padding: 10px 30px;
+        height: 44px; 
+        font-size: medium; 
+        margin: 10px;
+        border: none;
+        font-weight: bold;
+    }
+    button:hover{
+        background-color: rgb(1, 47, 133));
+    }
+
+    
 
 
     </style>
@@ -80,49 +159,70 @@
 
                     <img src="https://ikc.edgekit.net/arb/appreview/arb-logo-black.png?updatedAt=1682172573691">
               </div>
-              <nav style="display: flex; background-color: rgb(235, 245, 247); padding-right: 30px; text-align: center; font-weight:300">
-            <a id="feature" href="#">Feature </a>
-            <a id="feature2" href="#">Use Cases</a>
+              <nav style="display: flex; background-color: white; padding-right: 30px; text-align: center; font-weight:300">
+            <a href="#">Feature </a>
+            <a href="#">Use Cases</a>
             <a href="#">Pricing</a>
             <a href="#">Blog</a>
             <a href="#">Contact</a>
             </nav>
             <div style="display: flex; justify-content: right; align-items:right; margin-left: 220px; ">
-            <button style="background-color: rgb(5, 91, 252); 
-            color:white; 
-            border-radius: 5px; 
-            padding: 10px 30px;
-            height: 44px; 
-            font-size: medium; 
-            margin: 10px;
-            border: none;
-            font-weight: bold;
-             "> Start Free 14-Days Trial</button>
+            <button type="button"> Start Free 14-Days Trial</button>
             </div>
-            </header>
+            <div class="login">
+                <a href="#>Login">Login</a>
+            </div>
+            <div class="languages">
+                <select >
+                    <option value ="English">English</option>
+                    <option value ="Francais">Francais</option>
+                    <option value ="Espanol">Espanol</option>
+                    <option value ="Deutsch">Deutsch</option>
+                    <option value ="English">English</option>
+                </select>
+            </div>
+        </header>
             <main class="main-container">
                 <br>
-                <br>
                 <div>
-                <p style="display: flex;
-                flex-direction: column;
-                align-items: center; 
-                justify-content: center;
-                text-align: center;
-                width: 100%;
-                padding: 20px;">Instant App-Store & Google Play Reviews in Slack or Teams—Fix Issues Before Users Churn</p> <div>
-                    <div style="align-items: center;">
-                        <p style="display: flex;
-                align-items: center; 
-                text-align: center;
-
-                padding: 20px;"><strong>15M+</strong> reviews delivered</p>
+                <p class="review-text">Instant App-Store & Google Play Reviews in Slack or Teams—Fix Issues Before Users Churn</p> <div>
+                    
+                        <span class="review-text2"><bold>&#11088; 15M+ </bold>  reviews delivered</span>
+                 
                     </div>
-                </div>
+                    <div style="display: flex; align-items: center; margin-left: 10px; margin-top: 0%; padding: 0px; font-size: 39px; font-weight: bold;  ">
+                        <h1 style="color: #252627;">App Reviews in   </h1><h1 style="color: rgb(94, 22, 94); margin-left: 18px;"> Slack</h1></div>
+
+                    </div>
+                    <div>
+                        <h1 style="color: rgb(56, 55, 55);
+                        text-align: center;
+                        font-size: 28px;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-weight: bold;">Instant Alerts in Your Team Right Inside Slack or Microsoft Teams</h1>
+                    </div>
+                    <div style="width: 900px;
+                    height: 25px;
+                    text-align: center;
+                    font-size: 18px;
+                   ">
+                        <p>Transform negative feedback into product improvements, respond to users in real-time, and systematically increase your app's rating from 3 stars to 5.</p>
+                    </div>
+                    <div>
+                    <form>
+                        <input type="text" placeholder="Type your app name to get started" >
+                    </form>
+                    </div>
             </main>
+            <br>
+            <br>
+        <footer style="text-align: center;">
+            <p style="font-size: 24px; color: rgb(117, 116, 116); font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Trusted by 1,200+ product teams. 15 million reviews delivered</p>
+
+        </footer>
 
 
-        </header>
+
     </div>
 
 </body>
