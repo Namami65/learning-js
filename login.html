@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LogIn Page</title>
     <style>
         .logo {
             display: flex;
@@ -14,11 +14,12 @@
             padding-top: 15px;
 
         }
-        .head{background-color: rgb(252, 255, 255);
-            height: 75px; 
+        .head{
+            height: 70px; 
             display: flex;
             text-align: center;
-            border-bottom: 1px solid grey;
+            box-shadow: 0px 0px 3px 0px rgb(161, 161, 161);
+            width: 100%;
         }
         .button1{
         background-color: rgb(5, 91, 252); 
@@ -31,6 +32,7 @@
         margin-top: 5px;
         border: none;
         font-weight: bold;
+        margin-top: 13px;
     }
 
 
@@ -42,27 +44,30 @@
         margin-top: 0px;
         border: 1px grey;
         font-weight: bold;
-        padding-top: 4px;
+        padding-top: 14px;
     }
     .languages select{
              height: 42px; 
              width: 90px;
     }
     .my-box {
+        align-items: center;
             width: 500px;
-            height: 450px;
-            background-color: #ffffff;
+            height: 455px;
             border: 1px solid #d1d1d1;
+            background-color: white;
             box-shadow: 0 4px 4px 4px rgba(104, 103, 103, 0.1);
             display: flex;
             justify-content: center;
             align-items: flex-start;
             margin-left: 649px;
-            margin-top: 200px;
+            margin-top: 175px;
             border-radius: 20px;
             padding-top: 20px;
             padding-right: 50px;
             padding-left: 50px;
+            margin-bottom:220px;
+            
         }
         form input{
             height: 55px;
@@ -93,6 +98,7 @@
         }
         .button3{
             background-color: rgb(255, 254, 254);
+            display: flex;
             color: rgb(3, 3, 3);
             text-align: center;
             font-size: 17px;
@@ -101,12 +107,14 @@
             border-radius: 5px;
             font-weight: bold;
             padding-bottom: 10px;
+            gap: 5px;
             box-shadow: 0px 2px 2px 2px rgb(199, 199, 199);
         }
         .button3 img{width: 13%;
             height: 37px;
             padding-bottom: 10px;
             text-align: center;
+            display: flex;
 
         }
         .button3:hover{
@@ -121,7 +129,7 @@
 
     </style>
 </head>
-<body>
+<body style="margin: 0%;">
     <header class="head">
               <div class="logo">
                 <img src="https://ikc.edgekit.net/arb/appreview/arb-logo-black.png?updatedAt=1682172573691">
@@ -141,10 +149,10 @@
 
         </header>
 
-    <main>
+    <main style="background: linear-gradient(to top, rgb(228, 243, 248),white); ">
         <div class="my-box">
             <div class="inside">
-                <h1 style="font-weight: bold;font-size: 50x; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Continue to AppReviewBot</h1>
+                <h1 style="font-weight: bold;font-size: 70x; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-top: 4px; margin: 0px;">Continue to AppReviewBot</h1>
                 <h2 style="text-align: center;font-family: Arial, Helvetica, sans-serif;font-size: 18px; color: rgb(114, 114, 114);">Enter your email to continue</h2>
                   
                 <br>
@@ -157,13 +165,19 @@
                 <br>
                 <p style="text-align: center; font-size: 20px; color: rgb(114, 114, 114); font-family: 'Times New Roman', Times, serif;">or continue with</p>
                 <div style="display: flex;">
-                <button class="button3" type="submit"><svg class="mr-2 h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"></path><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path></svg>
-                    Continue with Google</button>
+                <button class="button3" type="submit"> 
+                    
+                    <div style="justify-content: left; gap: 100px;display: flex; padding-left: 62px;">
+                    <svg><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"></path><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path></svg></div>
+                   
+                    <div style="display: flex; padding-bottom: 8px; padding-left: 20px; padding-top: 12px; "> Continue with Google </div>
+                </button>
                  </div>
+                 <p style="color: grey; font-size: 16px; text-align: center;">By continuing, you agree to our <a style="color: black;" href="term of service">term of serive</a>  and <a style="color: black;" href="policy">Policy</a> </p>
             </div>
-        
-
         </div>
+        <br>
+    
 
     </main>
         
